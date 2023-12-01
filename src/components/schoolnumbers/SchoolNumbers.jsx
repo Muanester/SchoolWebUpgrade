@@ -3,23 +3,23 @@ import "./SchoolNumbers.css";
 
 function SchoolNumbers() {
   return (
-    <section id="registration">
-      <div className="reminder">
+    <section id="school_numbers">
+      <div className="school_numbers-det">
         <h1>Ngoleni Secondary School In Numbers</h1>
-        <div className="time">
-          <div className="date">
+        <div className="numbers">
+          <div className="number">
             600 <br />
             Students
           </div>
-          <div className="date">
+          <div className="number">
             15 <br />
             Staffs
           </div>
-          <div className="date">
+          <div className="number">
             12 <br />
             Classes
           </div>
-          <div className="date">
+          <div className="number">
             13 <br />
             Subjects
           </div>

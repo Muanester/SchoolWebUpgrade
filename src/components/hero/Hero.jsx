@@ -1,5 +1,7 @@
 import React from "react";
 import "./Hero.css";
+import { Link } from "react-router-dom";
+import VisitMore from "../visitmore/VisitMore";
 
 function Hero() {
   return (
@@ -13,79 +15,12 @@ function Hero() {
           dignissimos nemo possimus. Veniam possimus quibusdam ex beatae
           consectetur itaque in. Accusantium, at.
         </p>
-        <div className="btn">
-          <a className="yellow" href="departments.html">
-            Visit Our Departments
-          </a>
+        <div className="btn btn-primary">
+          <Link to="/departments">Visit Our Departments</Link>
         </div>
       </div>
       <div className="hero-col2">
-        <h2>Visit More:</h2>
-        <div className="fea-base slideshow-container">
-          <div className="fea-box heroSlides fade">
-            <i className="fa-solid fa-chalkboard-user"></i>
-            <h3>School Staff</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, illum.
-            </p>
-            <a href="admin.html">Read More</a>
-          </div>
-          <div className="fea-box heroSlides fade">
-            <i className="fa-solid fa-school"></i>
-            <h3>Our Departments</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, illum.
-            </p>
-            <a href="departments.html">Read More</a>
-          </div>
-          <div className="fea-box heroSlides fade">
-            <i className="fa-solid fa-puzzle-piece"></i>
-            <h3>Clubs & Societies</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, illum.
-            </p>
-            <a href="events/clubs.html">Read More</a>
-          </div>
-          <div className="fea-box heroSlides fade">
-            <i className="fa-solid fa-puzzle-piece"></i>
-            <h3>Sports & Activities</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, illum.
-            </p>
-            <a href="events/sports.html">Read More</a>
-          </div>
-          <div className="fea-box heroSlides fade">
-            <i className="fa-solid fa-puzzle-piece"></i>
-            <h3>Tenders</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, illum.
-            </p>
-            <a href="events/tenders.html">Read More</a>
-          </div>
-          <div className="fea-box heroSlides fade">
-            <i className="fa-solid fa-puzzle-piece"></i>
-            <h3>Gallery</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, illum.
-            </p>
-            <a href="events/gallery.html">Read More</a>
-          </div>
-          <div className="fea-box heroSlides fade">
-            <i className="fa-solid fa-puzzle-piece"></i>
-            <h3>Our Churches</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, illum.
-            </p>
-            <a href="events/churches.html">Read More</a>
-          </div>
-        </div>
+        <VisitMore />
       </div>
     </section>
   );

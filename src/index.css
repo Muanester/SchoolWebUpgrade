@@ -13,6 +13,7 @@
   --color-bg-variant: #2c2c6c;
   --color-primary: rgb(35, 35, 85);
   --color-primary-variant: rgb(24, 24, 49);
+  --color-primary-variant-dim: rgba(24, 24, 49, 0.9);
   --color-white: #fff;
   --color-light: rgb(226, 226, 226);
 
@@ -22,22 +23,27 @@
   --container-width-md: 86%;
   --container-width-sm: 90%;
 
+  --container-border-radius-1: 5px;
+  --container-border-radius-2: 8px;
+  --container-border-radius-1: 5px;
+
   --section-padding-lg: 1vw 8vw;
   --section-padding-md: 1vw 8vw;
   --section-padding-sm: 1vw 8vw;
 
-  --container-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),
+  --container-box-shadow-1: 0 1px 1px rgba(0, 0, 0, 0.15),
     0 2px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15),
     0 8px 8px rgba(0, 0, 0, 0.15);
+  --container-box-shadow-2: 0px 0px 10px 0px rgba(82, 63, 105, 0.5);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 body {
   font-family: "Poppins", sans-serif;
@@ -67,25 +73,28 @@ h1 {
   color: var(--color-primary);
 }
 
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary-variant);
+}
+
 h6 {
   font-size: 1.1rem;
   color: var(--color-primary-variant);
 }
 
 section {
-  margin-top: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 8vw;
 }
-
-/* section > h2,
-section > h5 {
-  text-align: center;
-  color: var(--color-light);
-}
-
-section > h2 {
-  color: var(--color-primary);
-  margin-bottom: 3rem;
-} */
 
 .text-light {
   color: var(--color-light);
@@ -103,24 +112,33 @@ section > h2 {
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--color-white);
-  padding: 0.75rem 1.2rem;
+  padding: 0.55rem 1.2rem;
   /* border-radius: 0.4rem; */
-  border-radius: 35px 5px;
+  border-radius: 25px 5px;
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
+  background: var(--color-primary);
+}
+
+.btn a {
+  color: var(--color-white);
+  font-weight: 600;
 }
 
 .btn:hover {
   background: var(--color-white);
-  color: var(--color-bg);
   border-color: transparent;
 }
 
+.btn:hover a {
+  color: var(--color-bg);
+}
+
 .btn-primary {
-  background: var(--color-primary);
-  color: var(--color-white);
+}
+
+.btn-primary a {
 }
 
 img {

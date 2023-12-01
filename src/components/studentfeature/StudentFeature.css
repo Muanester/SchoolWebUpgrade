@@ -1,0 +1,47 @@
+.student_feature {
+  text-align: start;
+  background: #f9f9ff;
+  min-width: 350px;
+  max-width: 450px;
+  height: 100%;
+  position: relative;
+  padding: 1vw;
+  box-shadow: var(--container-box-shadow-2);
+}
+
+.student_feature:hover img {
+  scale: 1.1;
+}
+
+.student_feature-img {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.student_feature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.student_feature .btn {
+  margin-top: 10px;
+  position: absolute;
+  font-size: 0.9rem;
+  padding: 8px 25px;
+  right: 15px;
+  bottom: 1vw;
+}
+
+.student_feature-det {
+  display: flex;
+  position: relative;
+}
+
+.student_feature .details {
+  padding: 15px 15px 0 15px;
+}

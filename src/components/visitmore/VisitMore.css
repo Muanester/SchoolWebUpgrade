@@ -1,0 +1,19 @@
+.visit_more-slider {
+  background: var(--color-primary-variant-dim);
+  padding: 2rem;
+  border-radius: var(--container-border-radius-1);
+}
+
+.visit_more-item svg,
+.visit_more-item h3 {
+  color: var(--color-white);
+}
+
+.visit_more-item svg {
+  font-size: 2em;
+}
+
+.visit_more-item .btn {
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px 5px;
+}

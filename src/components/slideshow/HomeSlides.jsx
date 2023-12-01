@@ -15,10 +15,11 @@ function HomeSlides() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    arrows: false,
   };
 
   return (
-    <section className="slideshow">
+    <div className="slideshow">
       <Slider {...settings} className="slideshow_container">
         <div className="slide_item">
           <img src={Slide1} alt="" />
@@ -32,7 +33,7 @@ function HomeSlides() {
           <img src={Slide3} alt="" />
         </div>
       </Slider>
-    </section>
+    </div>
   );
 }
 

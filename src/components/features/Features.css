@@ -1,0 +1,11 @@
+.features_items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#features > h3,
+#features > h2 {
+  text-align: center;
+}

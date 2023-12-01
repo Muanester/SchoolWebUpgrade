@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import Headnav from "../headnav/Headnav";
+import Footer from "../footer/Footer";
 
 function Layout({ children }) {
   return (
@@ -8,6 +9,7 @@ function Layout({ children }) {
       <Headnav />
       <Navbar />
       <div className="content">{children}</div>
+      <Footer />
     </div>
   );
 }
