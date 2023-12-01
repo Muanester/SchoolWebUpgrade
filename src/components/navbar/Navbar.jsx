@@ -4,7 +4,7 @@ import Logo from "../../assets/logo.jpg";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [scrollDirection, setScrollDirection] = useState("down");
+  const [scrollDirection, setScrollDirection] = useState("up");
   const [prevScrollY, setPrevScrollY] = useState(0);
   const [menu, setMenu] = useState("home");
 

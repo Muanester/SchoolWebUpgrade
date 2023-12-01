@@ -1,0 +1,44 @@
+.about_features h2 {
+  text-align: center;
+}
+
+.fea-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 20px;
+  height: auto;
+}
+
+.fea-box {
+  background: #121f36;
+  text-align: start;
+  padding: 20px;
+  cursor: pointer;
+  &:hover {
+    background: #050a13;
+    &.fea-box a {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+}
+
+.fea-box svg {
+  font-size: 2.3rem;
+  color: #f9f9ff;
+}
+
+.fea-box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f9f9ff;
+  padding: 13px 0 7px 0;
+}
+.fea-box p,
+.fea-box a {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #8a8aa4;
+  text-decoration: none;
+}
