@@ -67,8 +67,8 @@ function About() {
           </p>
         </div>
 
-        <AdminCouncil />
-        <StudentCouncil />
+        <AdminCouncil link={true} />
+        <StudentCouncil link={true} />
         <AboutFeatures />
       </section>
     </>

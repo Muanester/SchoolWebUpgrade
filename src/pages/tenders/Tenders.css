@@ -1,0 +1,9 @@
+#tenders {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+}
+
+.tenders_overview {
+  width: 85%;
+}

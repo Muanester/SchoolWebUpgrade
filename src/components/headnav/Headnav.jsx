@@ -29,25 +29,25 @@ function Headnav() {
         </ul>
         <ul>
           <li>
-            <Link>
+            <Link to="/admin">
               <FaBuilding className="headnav_icons" />
               Admin
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to="/events/gallery">
               <GrGallery className="headnav_icons" />
               Gallery
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to="/events/sports">
               <MdSportsVolleyball className="headnav_icons" />
               Sports
             </Link>
           </li>
           <li>
-            <Link>
+            <Link to="/events/tenders">
               <FaBook className="headnav_icons" />
               Tenders
             </Link>

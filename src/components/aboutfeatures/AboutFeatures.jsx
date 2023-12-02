@@ -16,7 +16,7 @@ function AboutFeatures() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
             illum.
           </p>
-          <Link to="/departments">Read More</Link>
+          <Link to="/admin">Read More</Link>
         </div>
         <div className="fea-box">
           <FaBuilding />
@@ -34,7 +34,7 @@ function AboutFeatures() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
             illum.
           </p>
-          <Link to="/events">Read More</Link>
+          <Link to="/events/clubs">Read More</Link>
         </div>
       </div>
     </div>

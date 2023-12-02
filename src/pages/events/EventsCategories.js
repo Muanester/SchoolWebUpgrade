@@ -52,7 +52,7 @@ let events_categories = [
       title: "Tenders",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore, tenetur voluptas provident hic similique architecto voluptatem assumenda voluptatibus est excepturi earum quo repellat facere magni id libero nulla asperiores.",
-      link: "/events",
+      link: "/events/tenders",
     },
   },
   {
@@ -61,7 +61,7 @@ let events_categories = [
       title: "Gallery",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore, tenetur voluptas provident hic similique architecto voluptatem assumenda voluptatibus est excepturi earum quo repellat facere magni id libero nulla asperiores.",
-      link: "/events",
+      link: "/events/gallery",
     },
   },
 ];

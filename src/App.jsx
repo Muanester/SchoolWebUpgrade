@@ -8,6 +8,9 @@ import Events from "./pages/events/Events";
 import Contact from "./pages/contact/Contact";
 import DepartmentItem from "./pages/departmentitem/DepartmentItem";
 import EventItem from "./pages/eventitem/EventItem";
+import Tenders from "./pages/tenders/Tenders";
+import Gallery from "./pages/gallery/Gallery";
+import Admin from "./pages/admin/Admin";
 
 function App() {
   return (
@@ -18,7 +21,7 @@ function App() {
         <Route path="/departments" element={<Departments />} />
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/eventitem" element={<EventItem />} />
+        <Route path="/admin" element={<Admin />} />
 
         <Route
           path="/departments/mathematics"
@@ -66,17 +69,12 @@ function App() {
           element={<EventItem category={"prayers"} />}
         />
         <Route
-          path="/events/tenders"
-          element={<EventItem category={"tenders"} />}
-        />
-        <Route
-          path="/events/gallery"
-          element={<EventItem category={"gallery"} />}
-        />
-        <Route
           path="/events/otherevents"
           element={<EventItem category={"otherevents"} />}
         />
+
+        <Route path="/events/tenders" element={<Tenders />} />
+        <Route path="/events/gallery" element={<Gallery />} />
       </Routes>
     </Layout>
   );

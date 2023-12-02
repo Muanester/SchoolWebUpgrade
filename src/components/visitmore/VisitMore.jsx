@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
-import { FaChalkboardTeacher } from "react-icons/fa";
 import visit_more_items from "./VisitMoreItems";
 
 function VisitMore() {

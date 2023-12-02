@@ -8,7 +8,7 @@ import SchCaptain from "../../assets/captain.JPG";
 import DepCaptain from "../../assets/depCaptain.JPG";
 import StudCouncil from "../../assets/studCouncil.JPG";
 
-function StudentCouncil() {
+function StudentCouncil(props) {
   return (
     <div>
       <div className="school_council">
@@ -22,7 +22,7 @@ iste itaque tempore similique veniam?Lorem ipsum dolor sit amet
 consectetur adipisicing elit. Adipisci quis est perspiciatis
 numquam tempore dolorem totam magnam recusandae consequatur
 fugiat."
-          link="/about"
+          link={props.link ? "/admin" : ""}
         />
 
         <ItemDetailCard_ImgR
@@ -34,7 +34,7 @@ iste itaque tempore similique veniam?Lorem ipsum dolor sit amet
 consectetur adipisicing elit. Adipisci quis est perspiciatis
 numquam tempore dolorem totam magnam recusandae consequatur
 fugiat."
-          link="/about"
+          link={props.link ? "/admin" : ""}
         />
 
         <ItemDetailCard_ImgL
@@ -46,7 +46,7 @@ iste itaque tempore similique veniam?Lorem ipsum dolor sit amet
 consectetur adipisicing elit. Adipisci quis est perspiciatis
 numquam tempore dolorem totam magnam recusandae consequatur
 fugiat."
-          link="/about"
+          link={props.link ? "/admin" : ""}
         />
       </div>
     </div>
