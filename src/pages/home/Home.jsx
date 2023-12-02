@@ -9,14 +9,14 @@ import Profiles from "../../components/profiles/Profiles";
 
 function Home() {
   return (
-    <div className="home">
+    <>
       <HomeSlides />
       <HomeAbout />
       <Hero />
       <Features />
       <SchoolNumbers />
       <Profiles />
-    </div>
+    </>
   );
 }
 

@@ -17,9 +17,11 @@ const ItemDetailCard_ImgL = (props) => {
             <br />
             <br />
           </p>
-          <div className="btn">
-            <Link to={props.link}>Read More</Link>
-          </div>
+          {props.link && (
+            <div className="btn">
+              <Link to={props.link}>Read More</Link>
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -38,9 +40,11 @@ const ItemDetailCard_ImgR = (props) => {
             <br />
             <br />
           </p>
-          <div className="btn">
-            <Link to={props.link}>Read More</Link>
-          </div>
+          {props.link && (
+            <div className="btn">
+              <Link to={props.link}>Read More</Link>
+            </div>
+          )}
         </div>
 
         <div className="item_detail_card-img">

@@ -16,7 +16,7 @@ let departments_categories = [
       title: "Mathematics Department",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore, tenetur voluptas provident hic similique architecto voluptatem assumenda voluptatibus est excepturi earum quo repellat facere magni id libero nulla asperiores.",
-      link: "/departments",
+      link: "/departments/mathematics",
     },
   },
   {
@@ -25,7 +25,7 @@ let departments_categories = [
       title: "Languages Department",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore, tenetur voluptas provident hic similique architecto voluptatem assumenda voluptatibus est excepturi earum quo repellat facere magni id libero nulla asperiores.",
-      link: "/departments",
+      link: "/departments/languages",
     },
   },
   {
@@ -34,7 +34,7 @@ let departments_categories = [
       title: "Sciences Department",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore, tenetur voluptas provident hic similique architecto voluptatem assumenda voluptatibus est excepturi earum quo repellat facere magni id libero nulla asperiores.",
-      link: "/departments",
+      link: "/departments/sciences",
     },
   },
   {
@@ -43,7 +43,7 @@ let departments_categories = [
       title: "Humanities Department",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore, tenetur voluptas provident hic similique architecto voluptatem assumenda voluptatibus est excepturi earum quo repellat facere magni id libero nulla asperiores.",
-      link: "/departments",
+      link: "/departments/humanities",
     },
   },
   {
@@ -52,7 +52,7 @@ let departments_categories = [
       title: "Business | Agriculture Department",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore, tenetur voluptas provident hic similique architecto voluptatem assumenda voluptatibus est excepturi earum quo repellat facere magni id libero nulla asperiores.",
-      link: "/departments",
+      link: "/departments/business",
     },
   },
   {
@@ -61,7 +61,7 @@ let departments_categories = [
       title: "Electives Department",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore, tenetur voluptas provident hic similique architecto voluptatem assumenda voluptatibus est excepturi earum quo repellat facere magni id libero nulla asperiores.",
-      link: "/departments",
+      link: "/departments/electives",
     },
   },
 ];

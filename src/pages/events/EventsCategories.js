@@ -7,7 +7,7 @@ let events_categories = [
       title: "Clubs & Societies",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore, tenetur voluptas provident hic similique architecto voluptatem assumenda voluptatibus est excepturi earum quo repellat facere magni id libero nulla asperiores.",
-      link: "/events",
+      link: "/events/clubs",
     },
   },
   {
@@ -16,7 +16,7 @@ let events_categories = [
       title: "Sports",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore, tenetur voluptas provident hic similique architecto voluptatem assumenda voluptatibus est excepturi earum quo repellat facere magni id libero nulla asperiores.",
-      link: "/events",
+      link: "/events/sports",
     },
   },
   {
@@ -25,7 +25,7 @@ let events_categories = [
       title: "Entertainment",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore, tenetur voluptas provident hic similique architecto voluptatem assumenda voluptatibus est excepturi earum quo repellat facere magni id libero nulla asperiores.",
-      link: "/events",
+      link: "/events/entertainment",
     },
   },
   {
@@ -34,7 +34,7 @@ let events_categories = [
       title: "Prayers & Services",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore, tenetur voluptas provident hic similique architecto voluptatem assumenda voluptatibus est excepturi earum quo repellat facere magni id libero nulla asperiores.",
-      link: "/events",
+      link: "/events/prayers",
     },
   },
   {

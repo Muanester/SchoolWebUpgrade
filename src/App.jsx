@@ -6,6 +6,8 @@ import Departments from "./pages/departments/Departments";
 import About from "./pages/about/About";
 import Events from "./pages/events/Events";
 import Contact from "./pages/contact/Contact";
+import DepartmentItem from "./pages/departmentitem/DepartmentItem";
+import EventItem from "./pages/eventitem/EventItem";
 
 function App() {
   return (
@@ -16,6 +18,65 @@ function App() {
         <Route path="/departments" element={<Departments />} />
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/eventitem" element={<EventItem />} />
+
+        <Route
+          path="/departments/mathematics"
+          element={<DepartmentItem category={"mathematics"} />}
+        />
+        <Route
+          path="/departments/languages"
+          element={<DepartmentItem category={"languages"} />}
+        />
+        <Route
+          path="/departments/sciences"
+          element={<DepartmentItem category={"sciences"} />}
+        />
+        <Route
+          path="/departments/humanities"
+          element={<DepartmentItem category={"humanities"} />}
+        />
+        <Route
+          path="/departments/business"
+          element={<DepartmentItem category={"business"} />}
+        />
+        <Route
+          path="/departments/electives"
+          element={<DepartmentItem category={"electives"} />}
+        />
+        <Route
+          path="/departments/sciences"
+          element={<DepartmentItem category={"sciences"} />}
+        />
+
+        <Route
+          path="/events/clubs"
+          element={<EventItem category={"clubs"} />}
+        />
+        <Route
+          path="/events/sports"
+          element={<EventItem category={"sports"} />}
+        />
+        <Route
+          path="/events/entertainment"
+          element={<EventItem category={"entertainment"} />}
+        />
+        <Route
+          path="/events/prayers"
+          element={<EventItem category={"prayers"} />}
+        />
+        <Route
+          path="/events/tenders"
+          element={<EventItem category={"tenders"} />}
+        />
+        <Route
+          path="/events/gallery"
+          element={<EventItem category={"gallery"} />}
+        />
+        <Route
+          path="/events/otherevents"
+          element={<EventItem category={"otherevents"} />}
+        />
       </Routes>
     </Layout>
   );

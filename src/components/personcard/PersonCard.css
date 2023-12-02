@@ -1,0 +1,25 @@
+.person_card {
+  text-align: start;
+  background: #f9f9ff;
+  max-width: 450px;
+  height: 100%;
+  position: relative;
+  padding: 1vw;
+  box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.5);
+}
+
+.person_card-img {
+  width: 100%;
+  border-radius: var(--container-border-radius-2);
+  overflow: hidden;
+}
+
+.person_card-details {
+  padding: 15px 15px 0 15px;
+}
+
+.person_card_list {
+  display: grid;
+  grid-template-columns: var(--grid-template-column);
+  grid-gap: 1rem;
+}
