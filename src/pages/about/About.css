@@ -32,3 +32,23 @@
   color: var(--color-primary-variant);
   font-weight: 400;
 }
+
+@media (max-width: 780px) {
+  .about-text h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .about-text p {
+    width: 100%;
+    color: var(--color-primary-variant);
+    font-weight: 400;
+  }
+}

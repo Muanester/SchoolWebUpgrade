@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function HomeAbout() {
   return (
-    <section id="home">
+    <section id="home_about">
       <div className="home-wrap">
         <div className="about-img">
           <img src={Wrap} alt="" />

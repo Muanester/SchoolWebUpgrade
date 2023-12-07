@@ -5,7 +5,7 @@ function Tenders() {
   return (
     <div>
       <section id="tenders">
-        <div class="tenders_overview">
+        <div className="tenders_overview">
           <hr />
           <h3>Tenders</h3>
           <p>

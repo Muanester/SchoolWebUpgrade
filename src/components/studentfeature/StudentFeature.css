@@ -1,7 +1,6 @@
 .student_feature {
   text-align: start;
   background: #f9f9ff;
-  min-width: 350px;
   max-width: 450px;
   height: 100%;
   position: relative;
@@ -33,7 +32,7 @@
   position: absolute;
   font-size: 0.9rem;
   padding: 8px 25px;
-  right: 15px;
+  right: 1vw;
   bottom: 1vw;
 }
 
@@ -44,4 +43,10 @@
 
 .student_feature .details {
   padding: 15px 15px 0 15px;
+}
+
+@media (max-width: 780px) {
+  .student_feature .btn {
+    padding: 6px 18px;
+  }
 }

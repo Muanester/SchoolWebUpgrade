@@ -36,7 +36,7 @@
     0 8px 8px rgba(0, 0, 0, 0.15);
   --container-box-shadow-2: 0px 0px 10px 0px rgba(82, 63, 105, 0.5);
 
-  --grid-template-column: repeat(auto-fit, minmax(320px, 1fr));
+  --grid-template-column: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 html {
@@ -46,7 +46,6 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.7;
-  /* background-image: url(../src/assets/bg-texture.png); */
   background-color: rgba(226, 226, 226, 0.7);
 }
 
@@ -125,23 +124,23 @@ img {
   object-fit: cover;
 }
 
-/* ========== MEDIA QUERIES ===========
-@media screen and (max-width: 1024px) {
-  .container {
-    width: var(--container-width-md);
+/* ========== MEDIA QUERIES =========== */
+@media (max-width: 450px) {
+  body {
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
   }
 
   section {
-    margin-top: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 5vw;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .container {
-    width: var(--container-width-sm);
-  }
-
-  section > h2 {
-    margin-bottom: 2rem;
-  }
-} */

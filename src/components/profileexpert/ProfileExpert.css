@@ -1,6 +1,6 @@
 .profile {
   width: 100%;
-  background: rgba(21, 21, 100, 0.05);
+  background: rgba(24, 24, 25, 0.15);
   padding: 30px 10px;
   margin: auto;
   display: flex;
@@ -8,7 +8,6 @@
   justify-content: center;
   align-items: center;
   border-radius: var(--container-border-radius-2);
-  /* border: 1px solid var(--color-primary-variant); */
 }
 
 .profile-det {
@@ -34,7 +33,6 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  /* transform: translateX(50%); */
 }
 
 .prof-img img {

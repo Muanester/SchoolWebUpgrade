@@ -47,3 +47,33 @@
 #headnav .headnav_icons {
   margin-right: 5px;
 }
+
+/* Media Queries */
+@media (max-width: 780px) {
+  #headnav {
+    padding: 8px 18px;
+  }
+
+  #headnav ul li svg {
+    display: none;
+  }
+
+  #headnav ul li,
+  #headnav ul li a {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  #headnav {
+    justify-content: center;
+  }
+
+  #headnav ul.headnav-list1 {
+    display: none;
+  }
+
+  #headnav ul li svg {
+    display: block;
+  }
+}

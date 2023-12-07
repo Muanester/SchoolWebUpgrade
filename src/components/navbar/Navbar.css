@@ -33,16 +33,6 @@ nav h1 {
   display: flex;
 }
 
-#menu-btn,
-.close-btn {
-  width: 30px;
-  height: 30px;
-  display: none;
-  &::before {
-    display: none;
-  }
-}
-
 .nav_lists ul {
   display: flex;
   justify-content: flex-end;
@@ -54,18 +44,18 @@ nav h1 {
   margin-left: 25px;
 }
 
-.nav_lists ul li a {
-  text-decoration: none;
+.nav ul li a {
   color: var(--color-primary);
   font-size: 1em;
   font-weight: 700;
   transition: all 0.3s ease;
 }
 
-.nav_lists ul li a:hover,
-.nav_lists ul li a.active {
+.nav ul li a:hover,
+.nav ul li a.active {
   color: #fdc93b;
   position: relative;
+
   &::after {
     content: "";
     scale: 1;
@@ -76,5 +66,82 @@ nav h1 {
     bottom: -5px;
     left: 0;
     right: 0;
+  }
+}
+
+.nav_open_menu-icon,
+.small_dev_menu {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  nav img {
+    width: 60px;
+  }
+
+  .nav_lists {
+    display: none;
+  }
+
+  .nav_open_menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    cursor: pointer;
+  }
+
+  .small_dev_menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    padding: 2rem;
+    background: rgba(17, 20, 104, 0.45);
+    backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.3s ease;
+  }
+
+  .nav_close_menu-icon {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .small_dev_menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav ul li a {
+    color: var(--color-white);
+  }
+}
+
+@media (max-width: 450px) {
+  nav {
+    height: 70px;
+    gap: 1rem;
+  }
+
+  nav img {
+    width: 50px;
+  }
+
+  nav h1 {
+    text-wrap: wrap;
+    line-height: 1;
+    font-size: 1.5em;
+    font-weight: 800;
   }
 }

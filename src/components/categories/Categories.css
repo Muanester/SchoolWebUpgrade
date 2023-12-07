@@ -49,3 +49,19 @@
   height: 1px;
   background: #757373;
 }
+
+@media (max-width: 450px) {
+  .categories {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .categories_items {
+    width: 100%;
+  }
+
+  .cate {
+    width: 80%;
+  }
+}

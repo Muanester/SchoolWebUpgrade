@@ -1,11 +1,13 @@
 footer {
   padding: 8vw;
   background-color: var(--color-primary-variant);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
   position: relative;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
 .footer-col {
@@ -48,7 +50,6 @@ footer {
   width: 220px;
   padding: 15px 12px;
   background: #334f6c;
-  margin-right: 10px;
   border: none;
   outline: none;
   color: #fff;
@@ -94,4 +95,11 @@ footer {
 
 .copyright .pro-links i {
   font-size: 1em;
+}
+
+@media (max-width: 450px) {
+  .subscribe input {
+    width: 180px;
+    padding: 15px 12px;
+  }
 }

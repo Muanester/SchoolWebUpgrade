@@ -67,3 +67,23 @@
   background: #a5a4a4;
   margin: 3rem 0 1rem 0;
 }
+
+@media (max-width: 450px) {
+  .event_item {
+    margin-top: 120px;
+  }
+
+  .event_item-wrap {
+    width: 95%;
+  }
+
+  .event_item-name h3 {
+    font-size: 1.5rem;
+  }
+
+  .event_item-wrap > h3,
+  .event_item-wrap > h4 {
+    margin: 1rem 0 1rem 0;
+    font-size: 1.2rem;
+  }
+}

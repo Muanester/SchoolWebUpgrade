@@ -1,5 +1,7 @@
 .item_detail_card {
-  display: flex;
+  display: grid;
+  grid-template-columns: var(--grid-template-column);
+  gap: 1rem;
   justify-content: space-between;
   padding: 2vw;
   margin-bottom: 10px;
@@ -9,22 +11,13 @@
   border-radius: 8px;
 }
 
-.item_detail_card .item_detail_card-img {
-  width: 450px;
-  margin-right: 1rem;
-}
-
 .item_detail_card .item_detail_card-img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
   border-radius: 8px;
 }
 
 .item_detail_card .item_detail_card-text {
   position: relative;
-  width: 60%;
-  margin-right: 1rem;
+  width: 100%;
 }
 
 .item_detail_card .item_detail_card-text .btn {
@@ -32,8 +25,5 @@
   bottom: 0;
 }
 
-.item_detail_card.right-image .item_detail_card-img {
-  display: flex;
-  align-items: flex-end;
-  margin-right: 0;
+@media (max-width: 450px) {
 }

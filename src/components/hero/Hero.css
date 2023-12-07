@@ -21,7 +21,6 @@
 }
 
 #hero p {
-  /* width: 70%; */
   color: #fff;
   font-size: 0.9rem;
   letter-spacing: 1px;
@@ -46,4 +45,34 @@
   width: 30%;
   height: auto;
   overflow: hidden;
+}
+
+@media (max-width: 780px) {
+  #hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero-col2 {
+    width: 37%;
+  }
+}
+
+@media (max-width: 450px) {
+  #hero {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-col1,
+  .hero-col2 {
+    width: 100%;
+  }
+
+  .hero-col1 {
+    border-right: none;
+  }
 }

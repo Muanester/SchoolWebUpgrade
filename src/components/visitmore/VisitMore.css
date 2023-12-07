@@ -10,10 +10,16 @@
 }
 
 .visit_more-item svg {
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 
 .visit_more-item .btn {
   padding: 0.4rem 1.2rem;
   border-radius: 20px 5px;
+}
+
+@media (max-width: 780px) {
+  .visit_more-slider {
+    padding: 1rem;
+  }
 }

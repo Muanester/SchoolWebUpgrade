@@ -39,3 +39,26 @@
     scale: 1.01;
   }
 }
+
+@media (max-width: 780px) {
+  .slide_item {
+    height: 350px;
+    border-radius: var(--container-border-radius-2);
+  }
+}
+
+@media (max-width: 450px) {
+  .slideshow {
+    margin-top: 105px;
+  }
+
+  .slide_item {
+    height: 200px;
+  }
+
+  .slideshow_container ul li button {
+    &:before {
+      font-size: 6px;
+    }
+  }
+}

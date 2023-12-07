@@ -13,7 +13,7 @@ function Headnav() {
   return (
     <div>
       <div id="headnav">
-        <ul>
+        <ul className="headnav-list1">
           <li>
             <FaAddressBook className="headnav_icons" />
             P.O Box 258-90100, Machakos, Kenya

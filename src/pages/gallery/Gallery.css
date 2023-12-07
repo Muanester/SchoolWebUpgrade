@@ -8,3 +8,9 @@
   padding: 1vw;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 450px) {
+  .gallery {
+    margin-top: 120px;
+  }
+}
