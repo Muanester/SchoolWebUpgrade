@@ -2,10 +2,18 @@ import React from "react";
 import "./PersonCard.css";
 
 function PersonCard(props) {
+  const isGallery = {
+    cursor: "pointer",
+  };
+
   return (
     <div>
       <div className="person_card">
-        <div className="person_card-img">
+        <div
+          style={props.gallery ? isGallery : null}
+          onClick={props.onClick ? props.onClick : null}
+          className="person_card-img"
+        >
           <img src={props.image} alt="" />
         </div>
         <div className="person_card-details">
