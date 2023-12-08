@@ -1,16 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import "./Navbar.css";
 import Logo from "../../assets/logo.jpg";
-import { Link } from "react-router-dom";
-import { FaHamburger } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
+import { RiMenu3Fill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 
 function Navbar() {
   const [scrollDirection, setScrollDirection] = useState("up");
   const [prevScrollY, setPrevScrollY] = useState(0);
-  const [menu, setMenu] = useState("home");
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isNavbarOpen, setNavbarOpen] = useState(false);
+  const location = useLocation();
+  const navbarRef = useRef(null);
+  const menuIconRef = useRef(null);
+
+  const closeNavbar = () => {
+    setNavbarOpen(false);
+  };
+
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,6 +42,28 @@ function Navbar() {
     };
   }, [prevScrollY]);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        isNavbarOpen &&
+        navbarRef.current &&
+        !navbarRef.current.contains(event.target) &&
+        menuIconRef.current &&
+        !menuIconRef.current.contains(event.target)
+      ) {
+        closeNavbar();
+      }
+    };
+
+    if (isNavbarOpen) {
+      document.addEventListener("click", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isNavbarOpen]);
+
   const navStyle = {
     transition: "all 300ms ease-in-out",
 
@@ -50,32 +82,35 @@ function Navbar() {
         <div className="nav_lists">
           <ul>
             <i className="fa-solid fa-xmark close-btn"></i>
-            <li onClick={() => setMenu("home")}>
-              <Link className={menu === "home" ? "active" : ""} to="/">
+            <li>
+              <Link className={isActive("/") ? "active" : ""} to="/">
                 HOME
               </Link>
             </li>
-            <li onClick={() => setMenu("about")}>
-              <Link className={menu === "about" ? "active" : ""} to="/about">
+            <li>
+              <Link className={isActive("/about") ? "active" : ""} to="/about">
                 ABOUT
               </Link>
             </li>
-            <li onClick={() => setMenu("departments")}>
+            <li>
               <Link
-                className={menu === "departments" ? "active" : ""}
+                className={isActive("/departments") ? "active" : ""}
                 to="/departments"
               >
                 DEPARTMENTS
               </Link>
             </li>
-            <li onClick={() => setMenu("events")}>
-              <Link className={menu === "events" ? "active" : ""} to="/events">
+            <li>
+              <Link
+                className={isActive("/events") ? "active" : ""}
+                to="/events"
+              >
                 EVENTS
               </Link>
             </li>
-            <li onClick={() => setMenu("contact")}>
+            <li>
               <Link
-                className={menu === "contact" ? "active" : ""}
+                className={isActive("/contact") ? "active" : ""}
                 to="/contact"
               >
                 CONTACT
@@ -85,54 +120,54 @@ function Navbar() {
         </div>
 
         <div
+          ref={menuIconRef}
           onClick={() => {
-            setIsMenuOpen(true);
+            setNavbarOpen(!isNavbarOpen);
           }}
           className="nav_open_menu-icon"
         >
-          <FaHamburger />
+          <RiMenu3Fill />
         </div>
 
-        {isMenuOpen && (
-          <div className="small_dev_menu">
+        {isNavbarOpen && (
+          <div ref={navbarRef} className="small_dev_menu">
             <div
               onClick={() => {
-                setIsMenuOpen(false);
+                setNavbarOpen(!isNavbarOpen);
               }}
               className="nav_close_menu-icon"
             >
               <IoMdClose />
             </div>
             <ul>
-              <i className="fa-solid fa-xmark close-btn"></i>
               <li
                 onClick={() => {
-                  setMenu("home");
-                  setIsMenuOpen(false);
+                  setNavbarOpen(!isNavbarOpen);
                 }}
               >
-                <Link className={menu === "home" ? "active" : ""} to="/">
+                <Link className={isActive("/") ? "active" : ""} to="/">
                   HOME
                 </Link>
               </li>
               <li
                 onClick={() => {
-                  setMenu("home");
-                  setIsMenuOpen(false);
+                  setNavbarOpen(!isNavbarOpen);
                 }}
               >
-                <Link className={menu === "about" ? "active" : ""} to="/about">
+                <Link
+                  className={isActive("/about") ? "active" : ""}
+                  to="/about"
+                >
                   ABOUT
                 </Link>
               </li>
               <li
                 onClick={() => {
-                  setMenu("home");
-                  setIsMenuOpen(false);
+                  setNavbarOpen(!isNavbarOpen);
                 }}
               >
                 <Link
-                  className={menu === "departments" ? "active" : ""}
+                  className={isActive("/departments") ? "active" : ""}
                   to="/departments"
                 >
                   DEPARTMENTS
@@ -140,12 +175,11 @@ function Navbar() {
               </li>
               <li
                 onClick={() => {
-                  setMenu("home");
-                  setIsMenuOpen(false);
+                  setNavbarOpen(!isNavbarOpen);
                 }}
               >
                 <Link
-                  className={menu === "events" ? "active" : ""}
+                  className={isActive("/events") ? "active" : ""}
                   to="/events"
                 >
                   EVENTS
@@ -153,12 +187,11 @@ function Navbar() {
               </li>
               <li
                 onClick={() => {
-                  setMenu("home");
-                  setIsMenuOpen(false);
+                  setNavbarOpen(!isNavbarOpen);
                 }}
               >
                 <Link
-                  className={menu === "contact" ? "active" : ""}
+                  className={isActive("/contact") ? "active" : ""}
                   to="/contact"
                 >
                   CONTACT
