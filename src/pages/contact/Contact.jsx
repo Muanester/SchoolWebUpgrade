@@ -53,10 +53,7 @@ function Contact() {
 
         <div className="form">
           <h4>Let's Connect</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur, voluptate.
-          </p>
+          <p>We make effort to getting back to you as soon as possible.</p>
           <div className="form-row">
             <input type="text" placeholder="Your Name" />
             <input type="email" placeholder="Email" />

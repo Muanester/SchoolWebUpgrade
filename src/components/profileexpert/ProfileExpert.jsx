@@ -1,5 +1,7 @@
 import React from "react";
 import "./ProfileExpert.css";
+import { RiDoubleQuotesL } from "react-icons/ri";
+import { RiDoubleQuotesR } from "react-icons/ri";
 
 function ProfileExpert(props) {
   return (
@@ -9,9 +11,11 @@ function ProfileExpert(props) {
       </div>
       <div className="profile-det">
         <p>
-          <i className="fa fa-quote-left"></i>
+          <RiDoubleQuotesL />
+
           {props.details}
-          <i className="fa fa-quote-right"></i>
+
+          <RiDoubleQuotesR />
         </p>
         <h6>{props.title}</h6>
       </div>

@@ -13,57 +13,60 @@ function About() {
         <div className="about-text">
           <h3>Our History:</h3>
           <p>
-            You can start and finish the one of the following courses Today-for
-            free. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Natus alias omnis perferendis, dolorum doloremque minus ad
-            consequatur quasi ipsum culpa at vitae dolore earum fuga? Nulla
-            aliquid quis nesciunt at!br <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            delectus blanditiis facilis aliquam vel id tempora aliquid debitis,
-            sed quisquam? Earum deserunt tempore totam perspiciatis sed officiis
-            cumque error sequi! <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-            accusamus ut quas, inventore debitis nisi quo quos, exercitationem,
-            necessitatibus officiis amet aspernatur culpa cum facilis reiciendis
-            quisquam facere porro possimus nihil quia! Dignissimos
-            necessitatibus laborum, obcaecati placeat beatae, voluptatibus,
-            assumenda quaerat voluptatem facilis quibusdam eum velit ducimus
-            suscipit. Culpa id atque tenetur delectus itaque non facere autem
-            veritatis? Magni, ipsa!
+            Welcome to Ngoleni Secondary School, a beacon of educational
+            excellence under the able leadership of Principal Margaret Mutie.
+            Nestled in the picturesque landscape of Kathiani Sub-County,
+            Machakos County, our school stands as a testament to a commitment to
+            holistic learning.
             <br />
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            vero odio minus laborum vel nostrum, modi a voluptatibus natus
-            molestiae minima dolor velit, perspiciatis reiciendis ratione. Ullam
-            animi sapiente inventore? <br />
-            <br />
-            You can start and finish the one of the following courses Today-for
-            free. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Natus alias omnis perferendis, dolorum doloremque minus ad
-            consequatur quasi ipsum culpa at vitae dolore earum fuga? Nulla
-            aliquid quis nesciunt at!br <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            delectus blanditiis facilis aliquam vel id tempora aliquid debitis,
-            sed quisquam? Earum deserunt tempore totam perspiciatis sed officiis
-            cumque error sequi! <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-            accusamus ut quas, inventore debitis nisi quo quos, exercitationem,
-            necessitatibus officiis amet aspernatur culpa cum facilis reiciendis
-            quisquam facere porro possimus nihil quia! Dignissimos
-            necessitatibus laborum, obcaecati placeat beatae, voluptatibus,
-            assumenda quaerat voluptatem facilis quibusdam eum velit ducimus
-            suscipit. Culpa id atque tenetur delectus itaque non facere autem
-            veritatis? Magni, ipsa!
+            Ngoleni Secondary School is a Mixed Day and Boarding institution,
+            catering to the diverse needs of students. Led by Principal Margaret
+            Mutie, our school is dedicated to providing a nurturing environment
+            for both boys and girls. With a focus on academic achievement,
+            character development, and extracurricular engagement, Ngoleni is
+            more than an educational institution; it's a community that fosters
+            growth and exploration.
             <br />
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            vero odio minus laborum vel nostrum, modi a voluptatibus natus
-            molestiae minima dolor velit, perspiciatis reiciendis ratione. Ullam
-            animi sapiente inventore?
+            At the heart of our educational approach are dedicated departments
+            that cater to a wide range of disciplines. In the Science and
+            Mathematics departments, students engage in rigorous academic
+            pursuits, developing analytical and problem-solving skills that
+            prepare them for future challenges. Our Humanities department
+            emphasizes critical thinking, encouraging students to explore and
+            understand the world around them.
+            <br />
+            <br />
+            Beyond academics, Ngoleni Secondary School places a strong emphasis
+            on the Arts and Sports departments. Here, creativity is celebrated,
+            and teamwork is instilled through various artistic endeavors and
+            athletic activities. These departments contribute to a well-rounded
+            education, nurturing not only the mind but also the spirit.
+            <br />
+            <br />
+            Ngoleni Secondary School operates at the Sub-County level,
+            reflecting our commitment to providing quality education accessible
+            to the local community. Our status as both a Day and Boarding school
+            ensures flexibility for students, allowing them to choose an
+            educational model that aligns with their needs and preferences.
+            <br />
+            <br />
+            Our school is equipped with state-of-the-art facilities, providing a
+            conducive environment for learning and personal development. We
+            believe in empowering our students to reach their full potential,
+            preparing them for higher education and the challenges of the
+            future.
+            <br />
+            <br />
+            Ngoleni Secondary School invites students and parents alike to
+            embark on a journey of discovery and growth. With Principal Margaret
+            Mutie at the helm, our school is not just an institution but a
+            community where every student is valued, supported, and encouraged
+            to excel in academics and beyond. Welcome to Ngoleni, where
+            education meets inspiration!
+            <br />
+            <br />
           </p>
         </div>
 

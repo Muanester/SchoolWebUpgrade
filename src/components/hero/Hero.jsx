@@ -9,11 +9,13 @@ function Hero() {
       <div className="hero-col1">
         <h2>Enhance Your Future With Ngoleni Secondary School</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo modi
-          quod tempora est, delectus corrupti nihil deleniti aliquid distinctio
-          similique! Aspernatur earum reiciendis totam nam repellendus
-          dignissimos nemo possimus. Veniam possimus quibusdam ex beatae
-          consectetur itaque in. Accusantium, at.
+          Ngoleni Secondary School boasts diverse departments catering to a
+          comprehensive education. From Science and Mathematics, fostering
+          analytical minds, to Humanities nurturing critical thinking, each
+          department is led by passionate educators. Our Arts and Sports
+          departments inspire creativity and teamwork, enriching the school
+          experience. Explore the breadth of knowledge across our dynamic
+          academic departments at Ngoleni.
         </p>
         <div className="btn btn-primary">
           <Link to="/departments">Visit Our Departments</Link>

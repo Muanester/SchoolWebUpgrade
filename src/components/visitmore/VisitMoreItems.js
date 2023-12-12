@@ -9,35 +9,35 @@ let visit_more_items = [
     icon: FaChalkboardTeacher,
     title: "School Admin",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium Lorem ipsum dolor sit amet ",
+      "Committed to advocacy and leadership, we work collaboratively to enhance the student experience and foster unity.",
     link: "/admin",
   },
   {
     icon: GrGallery,
     title: "Our Gallery",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium Lorem ipsum dolor sit amet ",
+      "From academic achievements to artistic endeavors, it reflects the diverse talents and accomplishments that define our school community. ",
     link: "/events/gallery",
   },
   {
     icon: FaBuilding,
     title: "About Our School",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium Lorem ipsum dolor sit amet ",
+      "Welcome to Ngoleni Secondary School, a beacon of educational excellence.",
     link: "/about",
   },
   {
     icon: FaPuzzlePiece,
     title: "Clubs & Societies",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium Lorem ipsum dolor sit amet ",
+      "Students explore diverse interests, fostering teamwork, leadership, and personal development.",
     link: "/events/clubs",
   },
   {
     icon: MdOutlineSportsVolleyball,
     title: "Sports & Activities",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium Lorem ipsum dolor sit amet ",
+      "From team sports to individual pursuits, students engage in a diverse range of activities promoting fitness and teamwork.",
     link: "/events/sports",
   },
 ];
